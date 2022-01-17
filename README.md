@@ -1,5 +1,5 @@
 <h2 align="center"> NotReddit </h2> 
-<h3 align="center"> Node.js <el>backend<el> uz upotrebu Express framework-a </h3>
+<h3 align="center"> Node.js __backend__ uz upotrebu Express framework-a </h3>
 
 <p align="center">
 <img src="https://img.shields.io/badge/Support-Windows%20x64-blue?logo=Windows&style=flat">
