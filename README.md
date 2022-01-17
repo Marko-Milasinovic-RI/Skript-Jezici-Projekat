@@ -32,6 +32,9 @@ npm install -g express
 
 ## Run with
 ```
+sequelize db:migrate
+```
+```
 node app.js
 ```
 
