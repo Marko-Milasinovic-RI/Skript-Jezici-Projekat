@@ -2,23 +2,23 @@
 Backend treba da bude razvijen u Node.js-u upotrebom Express framework-a. Potrebno je imati 3 backend servisa:
 * REST servis koji eksponira podatke u bazi
   * CRUD operacije za sve entitete u bazi
-o Validacija na svim korisničkim unosima (Joi ili po slobodnom izboru)
-o Autorizacija (korisnika koji je autentifikovan)
-▪ Potrebno je imati minimum 2 vrste korisnika, na primer:
-• Admin – može sve
-• Moderator – može sve osim da administrira korisnike
-o Dozvoljeno je koristiti bilo koju bazu podataka
-▪ Potrebno je minimalno 4 entiteta (modela)
-▪ Minimum 5 unosa u svakom (po potrebi više)
-• Servis za autentifikaciju
-o Registrovanje korisnika (samo API, ne GUI)
-o Autentifikacija (login, JWT, samo API)
+  * Validacija na svim korisničkim unosima (Joi ili po slobodnom izboru)
+  * Autorizacija (korisnika koji je autentifikovan)
+* Potrebno je imati minimum 2 vrste korisnika, na primer:
+* Admin – može sve
+* Moderator – može sve osim da administrira korisnike
+  * Dozvoljeno je koristiti bilo koju bazu podataka
+  * Potrebno je minimalno 4 entiteta (modela)
+  * Minimum 5 unosa u svakom (po potrebi više)
+  * Servis za autentifikaciju
+  * Registrovanje korisnika (samo API, ne GUI)
+  * Autentifikacija (login, JWT, samo API)
 • Aplikacioni servis
-o Servira HTML i prateće resurse aplikacije (GUI)
-o Sve rute treba da budu prefiksovana sa „/admin“ i da se nalaze u posebnim modulima
-o Komunicira sa REST servisom (fetch / ajax)
-o GUI za administriranje baze (sve CRUD operacije nad svim entitetima)
-▪ Svaki entitet treba da ima svoje stranice za prikaz spiska, detalja, izmene itd.
+  * Servira HTML i prateće resurse aplikacije (GUI)
+  * Sve rute treba da budu prefiksovana sa „/admin“ i da se nalaze u posebnim modulima
+  * Komunicira sa REST servisom (fetch / ajax)
+  * GUI za administriranje baze (sve CRUD operacije nad svim entitetima)
+    * Svaki entitet treba da ima svoje stranice za prikaz spiska, detalja, izmene itd.
 * Početna stranica treba da sadrži linkove ka stranicama entiteta
   * Validacija na svim korisničkim unosima (Joi ili po slobodnom izboru)
   * Dizajn / izgled dokle god ne narušava funkcionalnost se ne ocenjuje
