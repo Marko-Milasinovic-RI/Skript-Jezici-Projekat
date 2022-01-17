@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> NotReddit posts </title>
+    <script src="javascript/aPosts.js"></script>
+</head>
+
+<body onload="init()">
+
+    <header class="header" id="headerID">
+        <button id="homeBtn">Homepage</button>
+        <button id="logoutBtn">Logout user</button>
+    </header>
+
+<div class="formDiv" id="formDivWrapper">
+    <h3>Create Ad Post</h3>
+
+    <br>
+    <form id="form 1">
+        <input type="text" id="title" name="login" placeholder="Please enter post title">
+        <input type="text" id="author" name="login" placeholder="Please enter author">
+        <input type="text" id="content" name="login" placeholder="Please enter content">
+        <input type="text" id="date" name="login" placeholder="Please enter date">
+        <input id="createBtn" type="submit" value="Create">
+    </form>
+
+    <br><br>
+
+    <h3>Update Ad Post</h3>
+
+    <br>
+    <form id="form2">
+        <input type="text" id="titleUp" name="login" placeholder="Please enter post title">
+        <input type="text" id="authorUp" name="login" placeholder="Please enter author">
+        <input type="text" id="contentUp" name="login" placeholder="Please enter content">
+        <input type="text" id="dateUp" name="login" placeholder="Please enter date">
+        <input id="updateBtn" type="submit" value="Update post">
+    </form>
+
+</div>
+
+<div>
+    <br> <ul id="aPostList"> </ul> <br>
+</div>
+
+</body>
+</html>

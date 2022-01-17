@@ -2,21 +2,18 @@
 const {
   Model
 } = require('sequelize');
+
 module.exports = (sequelize, DataTypes) => {
   class Users extends Model {
-    /**
-     * Helper method for defining associations.
-     * This method is not a part of Sequelize lifecycle.
-     * The `models/index` file will call this method automatically.
-     */
-    
-    static associate({ Messages }) {
-      // define association here
-      this.hasMany(Messages, { foreignKey: 'userId', as: 'messages', onDelete: 'cascade', hooks: true });
+
+    static associate({AdminPosts, CreatorPosts}) {
+      this.hasMany(AdminPosts, {foreignKey: "userId", as: "adminPosts", onDelete: "cascade", hooks: true});
+      this.hasMany(CreatorPosts, {foreignKey: "userId", as: "creatorPosts", onDelete: "cascade", hooks: true});
     }
   };
+
   Users.init({
-    name: {
+    username: {
       type: DataTypes.STRING,
       allowNull: false,
       unique: true
@@ -27,16 +24,31 @@ module.exports = (sequelize, DataTypes) => {
       unique: true,
       validate: {
         isEmail: {
-          msg: "Nije email"
+          msg: "not e-mail"
         }
       }
+    },
+    firstname: {
+      type: DataTypes.STRING,
+      allowNull: false
+    },
+    lastname: {
+      type: DataTypes.STRING,
+      allowNull: false
+    },
+    password: {
+      type: DataTypes.STRING,
+      allowNull: false
+    },
+    role: {
+      type: DataTypes.STRING,
+      allowNull: false
     }
   }, {
     sequelize,
-    defaultScope: {
-      attributes: { exlude: ['email'] }
-    },
-    modelName: 'Users',
+    //defaultScope:
+    //{attributes: { exlude: ['email'] }},
+    modelName: 'Users'
   });
   return Users;
 };
