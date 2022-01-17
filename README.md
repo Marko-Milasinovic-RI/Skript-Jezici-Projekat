@@ -1,9 +1,9 @@
 <h2 align="center"> NotReddit </h2> 
-<h3 align="center"> Node.js *backend* uz upotrebu Express framework-a </h3>
+<h3 align="center"> Node.js <el>backend<el> uz upotrebu Express framework-a </h3>
 
 <p align="center">
 <img src="https://img.shields.io/badge/Support-Windows%20x64-blue?logo=Windows&style=flat">
-<img src="https://img.shields.io/github/license/marko-milasinovic/Marko-Milasinovic-RI/Skript-Jezici-Projekat?style=flat">
+<img src="https://img.shields.io/github/license/Marko-Milasinovic-RI/Skript-Jezici-Projekat?style=flat">
 <img src="https://tokei.rs/b1/github/Marko-Milasinovic-RI/Skript-Jezici-Projekat?category=code">
 </p>
 
