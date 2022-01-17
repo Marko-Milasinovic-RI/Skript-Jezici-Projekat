@@ -1,7 +1,7 @@
 # Skript-Jezici-Projekat
 Backend treba da bude razvijen u Node.js-u upotrebom Express framework-a. Potrebno je imati 3 backend servisa:
-• REST servis koji eksponira podatke u bazi
-o CRUD operacije za sve entitete u bazi
+* REST servis koji eksponira podatke u bazi
+  * CRUD operacije za sve entitete u bazi
 o Validacija na svim korisničkim unosima (Joi ili po slobodnom izboru)
 o Autorizacija (korisnika koji je autentifikovan)
 ▪ Potrebno je imati minimum 2 vrste korisnika, na primer:
@@ -19,9 +19,9 @@ o Sve rute treba da budu prefiksovana sa „/admin“ i da se nalaze u posebnim 
 o Komunicira sa REST servisom (fetch / ajax)
 o GUI za administriranje baze (sve CRUD operacije nad svim entitetima)
 ▪ Svaki entitet treba da ima svoje stranice za prikaz spiska, detalja, izmene itd.
-▪ Početna stranica treba da sadrži linkove ka stranicama entiteta
-o Validacija na svim korisničkim unosima (Joi ili po slobodnom izboru)
-o Dizajn / izgled dokle god ne narušava funkcionalnost se ne ocenjuje
+* Početna stranica treba da sadrži linkove ka stranicama entiteta
+  * Validacija na svim korisničkim unosima (Joi ili po slobodnom izboru)
+  * Dizajn / izgled dokle god ne narušava funkcionalnost se ne ocenjuje
 Dozvoljena je upotreba dodatnih biblioteka.
 Teme su po slobodnom izboru. U okviru ovog dela projekta implementira se ADMIN aplikacija. Korisnička aplikacija će biti implementirana u drugom (ispitnom) delu projekta upotrebom Vue.js frameworka.
 Predlog projekta sa kratkim opisom poslati do 17.12.2021. na mail svom asistentu: iciganovic@raf.rs ili pprvulovic@raf.rs
