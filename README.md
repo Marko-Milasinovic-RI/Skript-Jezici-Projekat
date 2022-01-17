@@ -26,9 +26,9 @@ npm install mysql
 ```
 npm install -g express
 ```
-* ```npm install -g @vue/cli```
-* ``` npm install connect-history-api-fallback ```
-* ``` npm install bootstrap@next ```
+*  ```npm install -g @vue/cli```
+*  ``` npm install connect-history-api-fallback ```
+*  ``` npm install bootstrap@next ```
 
 ## Run with
 ```
