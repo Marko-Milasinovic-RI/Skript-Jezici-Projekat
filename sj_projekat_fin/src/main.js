@@ -5,6 +5,6 @@ import index from './mainframe'
 
 new Vue({
     router,
-    store,
+    index,
     render: h => h(App)
 }).$mount('#app')
